@@ -1,0 +1,29 @@
+###
+POST http://localhost:8080/api/wishlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJLK2hFZHA2QTlHU0dzN1Fsa24yaWhKckRMaXA1bjI0ZW1GdlhUbFFDSUJjPSIsIm1lbWJlcklkIjoyLCJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9HRU5FUkFMIn1dLCJpYXQiOjE3MjQ2MTA5ODIsImV4cCI6MTcyNDYxNDU4Mn0.oBAYtNQzvr0N-r-jVV-2UdmzWouUe91AEpTuApCQ3es
+Content-Type: application/json
+
+[
+    {
+        "optionId": 1516,
+        "quantity": 2
+    },
+    {
+        "optionId": 1517,
+        "quantity": 1
+    }
+]
+
+###
+GET http://localhost:8080/api/wishlists?
+    memberId=58
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mm5mUW1ZSGgyZElsQjZLY3ZuWnlxaXYrdEMvOXVOR0FpR2pnOWNvTHFVPSIsIm1lbWJlcklkIjo1OCwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfR0VORVJBTCJ9XSwiaWF0IjoxNzI0NjUxODI2LCJleHAiOjE3MjQ2NTU0MjZ9.yZbzIpgX2a2qkc5PavbPYrrOr6vxyfImyjHp3il2Qi4
+
+###
+PATCH http://localhost:8080/api/wishlists/items/1503/quantity
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mm5mUW1ZSGgyZElsQjZLY3ZuWnlxaXYrdEMvOXVOR0FpR2pnOWNvTHFVPSIsIm1lbWJlcklkIjo1OCwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfR0VORVJBTCJ9XSwiaWF0IjoxNzI0NjYwMzI5LCJleHAiOjE3MjQ2NjM5Mjl9.P3LIArCauQY5rkd23IBhXvV_X4Yod_hohF9am1hkP5Q
+Content-Type: application/json
+
+{
+  "action": "DECREASE"
+}

@@ -1,0 +1,17 @@
+### 주문 생성
+POST http://localhost:8080/api/v0/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mm5mUW1ZSGgyZElsQjZLY3ZuWnlxaXYrdEMvOXVOR0FpR2pnOWNvTHFVPSIsIm1lbWJlcklkIjo1OCwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfR0VORVJBTCJ9XSwiaWF0IjoxNzI1Njk1MDkyLCJleHAiOjE3MjU2OTg2OTJ9.mH6M-M_fAyz8Tc-EscNX5ECvrPpHcWij49PJ0g11E_4
+Content-Type: application/json
+
+[
+  {
+    "wishlistItemId": 1509
+  }
+]
+
+### 주문 상태 변경
+PATCH http://localhost:8080/api/v0/orders/2002/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2Mm5mUW1ZSGgyZElsQjZLY3ZuWnlxaXYrdEMvOXVOR0FpR2pnOWNvTHFVPSIsIm1lbWJlcklkIjo1OCwicm9sZXMiOlt7ImF1dGhvcml0eSI6IlJPTEVfR0VORVJBTCJ9XSwiaWF0IjoxNzI1NzA0NjUzLCJleHAiOjE3MjU3MDgyNTN9.GAit2RlfF2mtuSJLcgA8DAL3YgqHBrIh03VPFE-CGEc
+Content-Type: application/json
+
+"CANCEL"

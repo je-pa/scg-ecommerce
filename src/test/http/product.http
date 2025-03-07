@@ -1,0 +1,24 @@
+###
+GET http://localhost:8080/api/v0/products/506
+
+
+###
+GET http://localhost:8080/api/products
+    ?pageSize=5
+    &listSort=PRICE_DESC
+    &pageNumber=2
+    &storeId=56
+
+###
+GET http://localhost:8080/api/products
+    ?pageSize=5
+    &listSort=PRICE_DESC
+    &pageNumber=2
+    &searchKeyword=21
+
+###
+GET http://localhost:8080/api/products
+    ?pageSize=5
+    &listSort=PRICE_DESC
+    &pageNumber=2
+    &productCategory=ACCESSORY
